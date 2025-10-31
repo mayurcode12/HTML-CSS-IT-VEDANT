@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form 3</h1>
+    <form>
+      Number: <input type="number" min="5" max="10" /><br />
+      Range: <input type="range" min="1" max="15" /> <br />
+      Date: <input type="date" min="2025-10-11" max="2025-10-25" /> <br />
+      F_name: <input type="text" maxlength="6" minlength="2" /> <br />
+      L_name: <input type="text" pattern="[a-zA-Z0-9@]+" /> <br />
+      Email: <input type="email" multiple /> <br />
+
+      <fieldset>
+        <legend>Address</legend>
+        City:<input type="text" /> <br />
+        Pincode<input type="number" /> <br />
+      </fieldset>
+
+      <!-- Select or dropdown menu -->
+      <select>
+        <optgroup label="North cities">
+          <option value="mumbai">Mumbai</option>
+          <option value="pune ">Delhi</option>
+        </optgroup>
+        <optgroup label="South cities">
+          <option value="kolkatta">Kolkatta</option>
+          <option value="Delhi">Pune</option>
+        </optgroup>
+      </select>
+      <input type="submit" />
+    </form>
+  </body>
+</html>

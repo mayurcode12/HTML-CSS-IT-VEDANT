@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form 2</h1>
+    <!-- html handles a default get method -->
+    <form action="">
+      <!-- we can use novalidate which does not validate the user data and allow user to submit  -->
+      F_Name: <input type="text" placeholder="Enter first name" autofocus />
+      <br />
+      L_Name: <input type="text" placeholder="Enter last name" required />
+      <br />
+
+      City:
+      <input
+        type="text"
+        value="Kalyan"
+        readonly
+        placeholder="Enter city"
+        autocomplete
+      />
+      <br />
+      Email:<input type="email" formnovalidate placeholder="Enter email" />
+      <br />
+      File: <input type="file" accept=".jpeg,png,jpg" />
+
+      <input type="submit" />
+      <input type="submit" value="Save" />
+    </form>
+    <h1>Method</h1>
+    <form action="" method="post">
+      F_name: <input type="text" name="f_name" /> <br />
+      City: <input type="text" placeholder="Enter city" autocomplete /> <br />
+      City: <input type="text" placeholder="Enter city" autocomplete /> <br />
+      <input type="submit" formmethod="post" />
+      <input type="submit" value="Save" formnovalidate />
+    </form>
+  </body>
+</html>
