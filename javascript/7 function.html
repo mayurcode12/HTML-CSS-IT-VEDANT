@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Functions in javascript</h1>
+    <script>
+      function sayHello() {
+        document.write("hello <br>");
+      }
+      sayHello();
+
+      function functionWithP(x, y) {
+        document.write(x + " " + y + "<br>");
+      }
+      functionWithP("version", 5.6);
+      functionWithP("Version");
+
+      //   function to calculate square of number
+
+      function squareOfNumber(num) {
+        document.write("square of " + num + " is " + num * num + "<br>");
+      }
+      squareOfNumber(69);
+      squareOfNumber(5);
+      squareOfNumber(89);
+
+      //   function to add two numbers
+      function add(a, b) {
+        document.writeln(a + " + " + b + " = " + (a + b) + "<br>");
+      }
+      add(45, 5);
+
+      //   taking parameter using argument object
+      function sum() {
+        var total = 0;
+        for (var i = 0; i < arguments.length; i++) {
+          total += arguments[i];
+        }
+        document.writeln(total);
+      }
+      sum(12, 45, 67, 900);
+    </script>
+  </body>
+</html>

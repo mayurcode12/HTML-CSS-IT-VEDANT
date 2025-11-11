@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Rest parameter</h1>
+    <script>
+      function rest_parameter(a, b, c, d, ...args) {
+        document.write("value of a: " + a);
+        document.write("value of b: " + b);
+        document.write("value of c: " + c);
+        document.write("values of rest parameter: " + args);
+        document.write("values of rest parameter: " + args[1]);
+      }
+      rest_parameter(12, 45, 7, 8, 89, 95, 9);
+    </script>
+  </body>
+</html>
