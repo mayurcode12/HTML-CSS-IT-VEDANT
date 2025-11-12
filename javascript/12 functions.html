@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Functions in Javascript</h1>
+    <script>
+      // normal function
+      console.log("factorial using normal function");
+      var num = 4;
+      function factorialOfNum(num) {
+        var total = 1;
+        for (var i = 1; i <= num; i++) {
+          total *= i;
+        }
+        console.log("factorial of " + num + " is: ", total);
+      }
+      factorialOfNum(num);
+
+      console.log("Factorial using function expression");
+
+      var factorialNumber1 = function fact(num) {
+        var total = 1;
+        for (var i = 1; i <= num; i++) {
+          total *= i;
+        }
+        total;
+      };
+      console.log("factorial of " + num + " is: ", factorialNumber1(num));
+
+      console.log("Factorial using anonymus function");
+      var factorialNumber2 = function (num) {
+        var total = 1;
+        for (var i = 1; i <= num; i++) {
+          total *= i;
+        }
+        return total;
+      };
+      console.log("factorial of " + num + " is: ", factorialNumber2(num));
+
+      console.log("Factorial using arrow function");
+
+      var factorialNumber3 = (num) => {
+        var total = 1;
+        for (var i = 1; i <= num; i++) {
+          total *= i;
+        }
+        return total;
+      };
+      console.log("factorial of " + num + " is: ", factorialNumber3(num));
+    </script>
+  </body>
+</html>
